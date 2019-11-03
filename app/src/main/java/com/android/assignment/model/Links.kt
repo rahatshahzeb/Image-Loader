@@ -4,9 +4,8 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-data class Category(
-    val id: Int,
-    val links: CategoryLinks,
-    val photo_count: Int,
-    val title: String
+data class Links(
+    val download: String,
+    val html: String,
+    val self: String
 ): Parcelable

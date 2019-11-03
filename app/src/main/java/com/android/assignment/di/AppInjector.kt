@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.fragment.app.FragmentManager
 import com.android.assignment.AssignmentApplication
-import com.android.assignment.di.module.AppModule
 import dagger.android.AndroidInjection
 import dagger.android.support.AndroidSupportInjection
 import dagger.android.support.HasSupportFragmentInjector
@@ -21,7 +20,6 @@ object AppInjector {
 
         DaggerAppComponent.builder()
             .application(assignmentApplication)
-            .appModule(AppModule(assignmentApplication))
             .build().inject(assignmentApplication)
         assignmentApplication.registerActivityLifecycleCallbacks(object : Application.ActivityLifecycleCallbacks {
                 override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
