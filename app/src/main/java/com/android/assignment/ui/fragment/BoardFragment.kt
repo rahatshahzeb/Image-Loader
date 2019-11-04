@@ -19,7 +19,7 @@ import com.android.assignment.util.autoCleared
 import javax.inject.Inject
 
 /**
- * A placeholder fragment containing images of a board.
+ * A fragment containing images of a board.
  */
 class BoardFragment : Fragment(), Injectable {
 
@@ -78,7 +78,7 @@ class BoardFragment : Fragment(), Injectable {
         private const val ARG_IMAGES = "images"
 
         /**
-         * Returns a new instance of this fragment for the given category.
+         * Returns a new instance of this fragment for the given board.
          */
         @JvmStatic
         fun newInstance(imageList: ArrayList<out Image>): BoardFragment {

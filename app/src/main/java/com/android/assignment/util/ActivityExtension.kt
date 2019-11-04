@@ -20,10 +20,6 @@ inline fun FragmentManager.inTransaction(addToBackStack: Boolean, func: Fragment
     }
 }
 
-fun AppCompatActivity.addFragment(fragment: Fragment, frameId: Int, tag: String, addToBackStack: Boolean){
-    supportFragmentManager.inTransaction(addToBackStack) { add(frameId, fragment, tag) }
-}
-
 fun AppCompatActivity.replaceFragment(fragment: Fragment, frameId: Int, tag: String, addToBackStack: Boolean) {
     supportFragmentManager.inTransaction(addToBackStack){replace(frameId, fragment, tag)}
 }

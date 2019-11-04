@@ -38,6 +38,8 @@ android {
 
 dependencies {
 
+    implementation project(path: ':imageloader')
+
     //Dagger
     implementation "com.google.dagger:dagger:$dagger"
     implementation "com.google.dagger:dagger-android:$dagger_android"
